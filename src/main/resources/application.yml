@@ -1,0 +1,27 @@
+server:
+  port: 3002
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: rladydtn76
+
+
+rabbitmq:
+  estory:
+    exchange: "estory.exchange"
+    queue: "estory.queue"
+    key: "estory.key"
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+logging:
+  level:
+    org.springframework.cache: trace
+  config: classpath:logback-spring.xml
+  file:
+    path: ./logs
